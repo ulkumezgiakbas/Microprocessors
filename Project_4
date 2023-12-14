@@ -40,4 +40,6 @@ if (switchState = prevSwitchState)
 {prevSwitchState = switchState;}
 
 
--Proteus üzerinde çizdiğim şemamı C++ kullanarak aktif hale getirdim.On this project, a digital hourglass is being built. Sand would be replaced by some LEDs and a tilt switch will detect when the hourglass turns.
+-I activated my schema that I drew on Proteus using C++. On this project, a digital hourglass is being built. Sand would be replaced by some LEDs and a tilt switch will detect when the hourglass turns.
+
+Schematic: https://imgtr.ee/image/IqhmNe
