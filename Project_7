@@ -1,0 +1,62 @@
+#include <LiquidCrystal.h>
+LiquidCrystal lcd (12, 11, 5, 4, 3, 2);
+const int switchPin = 6;
+int switchState = 0;
+int prevSwitchState = 0;
+int reply;
+void setup() 
+{
+  Icd.begin(16, 2);
+  pinMode(switchPin, INPUT);
+  Icd.print("Ask the");
+  Icd.setCursor(0, 1);
+  Icd.print("Crystal Bail);
+void loop()
+{
+  switchState = digitalRead(switchPin); 
+    if (switchState = prevSwitchState) 
+    {
+      if (switchState == LOW)
+        {
+          reply = random(8);
+          Icd.clear();
+          Icd.setCursor(0, 0);
+          Icd.print("the ball says:");
+          Icd.setCursor(0, 1);
+          switch (reply) 
+            {
+                case 0:
+                Icd.print("Yes");
+                    break;
+                case 1:
+                Icd.print("Most likely);
+                    break;
+                Icd.print("Certainty");
+                case 2:
+                    break;
+                case 3:
+                Icd.print("Outlook good");
+                    break;
+                case 4:
+                Icd.print("Unsure");
+                lcd.print("Ask again);
+                    break;
+                case 5:
+                    break;
+                case 6:
+                Icd.print("Doubtful");
+                    break; 
+                case 7:
+                Icd.print("No");
+                    break;
+            }
+        }
+    }
+prevSwitchState = switchState;
+}
+
+
+-I activated my schema that I drew on Proteus using C++. There are 16 pins on the screen, ranging from digital pins to power supplies (Vcc, Vss, LED+- etc.).
+R/W sets whether the panel should be used for writing or reading. PIN 6 or E alerts when instructions are to be received. 
+PIN 3 adjusts the brightness of the screen. 
+The fun part of this project was using the screen as a fortune teller. When we turn the breadboard upside down, it will search for a random answer among the screen answers and show it on the screen.
