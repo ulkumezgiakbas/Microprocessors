@@ -2,7 +2,8 @@ int notes[] = {262, 294, 330, 349 );
 
 void setup() 
 { Serial.begin(9600); }
-  void loop() 
+
+void loop() 
 {
   int keyVal = analogRead(A0);
   Serial.println(keyVal);
@@ -24,9 +25,11 @@ if (keyVal == 1023)
   tone(8, notes[3]);
 }
   else {
-  noTone (8);
+        noTone (8);
        }
 }
 
 
--I activated my schema that I drew on Proteus using C++. In this project, I wanted to create a piano
+-I activated my schema that I drew on Proteus using C++. In this project, I wanted to create a piano.
+
+Schematic: https://imgtr.ee/image/Iqhbwm
