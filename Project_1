@@ -1,0 +1,25 @@
+# Microprocessors
+ My Arduino work using C++int led;
+void setup()
+{
+  for(led=0; led <= 7; led ++)
+    {pinMode(led,OUTPUT);}
+}
+
+void loop()
+{
+delay(500); 
+for(led=0; led <=7; led++)
+  {digitalWrite (led,HIGH);
+  delay(100);
+  }
+for (led =7; led >=0; led-) 
+    {digitalWrite(led, LOW);
+    delay(100);
+    }
+}
+
+
+I activated my schema, which I drew on Proteus, using C++. My goal here was to have the lights flash and turn in the order.
+
+-Proteus schema
