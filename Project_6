@@ -66,3 +66,6 @@ previousOnOffSwitchState = onOffSwitchState;
 
 
 -I activated my diagram that I drew on Proteus using C++. In this project, the motor rotates clockwise or counterclockwise, depending on the direction of the current flow applied by the voltage through its terminals. I aimed to be able to control the direction of the current to direct the rotation of the motor.
+
+
+Schematic: https://imgtr.ee/image/IqI44m
