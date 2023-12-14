@@ -60,3 +60,5 @@ prevSwitchState = switchState;
 R/W sets whether the panel should be used for writing or reading. PIN 6 or E alerts when instructions are to be received. 
 PIN 3 adjusts the brightness of the screen. 
 The fun part of this project was using the screen as a fortune teller. When we turn the breadboard upside down, it will search for a random answer among the screen answers and show it on the screen.
+
+Schematic: https://imgtr.ee/image/IqIkm7
