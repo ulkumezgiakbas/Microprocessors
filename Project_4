@@ -1,0 +1,43 @@
+const int switchPin = 8; 
+unsigned long previous Time = 0; 
+int switchState = 0;
+int prevSwitchState = 0; 
+int led = 2; 
+interval = 600; 
+void setup() 
+{
+  for (int x = 2; x < 8; x++)
+  {
+    pinMode(x, OUTPUT);
+  }
+  input pinMode(switchPin, INPUT);
+}
+void loop() 
+{
+  unsigned long currentTime = millis();
+  if (currentTime - previous Time > interval)   
+   {
+     previousTime = currentTime;
+     digitalWrite(led, HIGH);
+     led++;
+    
+     if (led == 7) 
+   }
+}
+
+switchState = digitalRead(switchPin);
+
+if (switchState = prevSwitchState)
+{
+  for (int x = 2; x < 8; x++)
+  {
+    digitalWrite(x, LOW);
+  }
+  led = 2;
+  previousTime = currentTime;
+}
+
+{prevSwitchState = switchState;}
+
+
+-Proteus üzerinde çizdiğim şemamı C++ kullanarak aktif hale getirdim.On this project, a digital hourglass is being built. Sand would be replaced by some LEDs and a tilt switch will detect when the hourglass turns.
