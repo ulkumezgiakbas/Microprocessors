@@ -1,0 +1,56 @@
+const int greenLEDPin = 9; 
+const int redLEDPin = 10;  
+const int blueLEDPin = 11; 
+
+const int redSensorPin = A0;
+const int greenSensorPin = A1; 
+const int blueSensorPin = A2; 
+
+int redValue = 0; 
+int greenValue = 0; 
+int blueValue = 0;
+int redSensorValue = 0; 
+int greenSensorValue = 0;
+int blueSensorValue = 0; 
+
+void setup() 
+{ 
+  Serial.begin(9600);
+
+  pinMode(greenLEDPin, OUTPUT);
+  pinlitode (redLEDPin, OUTPUT);
+  pinMode(blueLEDPin, OUTPUT);
+}
+
+void loop() 
+{
+  redSensor Value = analogRead(redSensorPin);
+  delay(5); 
+  greenSensor Value = analogRead(greenSensorPin);
+  delay(5); blueSensorValue = analogRead(blueSensorPin);
+  
+  Serial.print(raw sensor Values it red: "); 
+  Serial.print(redSensor Value);
+  Serial.print(t green");
+  Serial.print(greenSensor Value);
+  Serial.print("\t Blue");
+  Serial.printin(blueSensor Value);
+
+  redValue = redSensor Value / 4;
+  greenValue = greenSensor Value /4; 
+  blueValue blueSensor Value /4;
+  
+  Serial.print( Mapped sensor Values it red: ");
+  Serial.print(redValue);
+  Serial.print(t green: "); 
+  Serial.print(greenValue);
+  Serial.print("\t Blue: "); 
+  Serial.printin(blueValue);
+  
+  analogWrite(redLEDPin, redValue);
+  analogWrite(greenLEDPin, greenValue);
+  analogWrite(blueLEDPin, blueValue);
+}
+
+
+-I activated my schema that I drew on Proteus using C++. My goal here was to make the color mixing lamb in the order I specified, with the delays I specified.
