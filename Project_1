@@ -1,5 +1,4 @@
-# Microprocessors
- My Arduino work using C++int led;
+
 void setup()
 {
   for(led=0; led <= 7; led ++)
@@ -22,4 +21,3 @@ for (led =7; led >=0; led-)
 
 I activated my schema, which I drew on Proteus, using C++. My goal here was to have the lights flash and turn in the order.
 
--Proteus schema
