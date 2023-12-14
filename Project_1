@@ -21,3 +21,4 @@ for (led =7; led >=0; led-)
 
 I activated my schema, which I drew on Proteus, using C++. My goal here was to have the lights flash and turn in the order.
 
+Schematic: https://imgtr.ee/image/IqIuiu
