@@ -9,6 +9,7 @@ const int blueSensorPin = A2;
 int redValue = 0; 
 int greenValue = 0; 
 int blueValue = 0;
+
 int redSensorValue = 0; 
 int greenSensorValue = 0;
 int blueSensorValue = 0; 
@@ -25,26 +26,27 @@ void setup()
 void loop() 
 {
   redSensor Value = analogRead(redSensorPin);
-  delay(5); 
+       delay(5); 
   greenSensor Value = analogRead(greenSensorPin);
-  delay(5); blueSensorValue = analogRead(blueSensorPin);
+       delay(5); 
+  blueSensorValue = analogRead(blueSensorPin);
   
-  Serial.print(raw sensor Values it red: "); 
+  Serial.print(raw sensor Values \t red: "); 
   Serial.print(redSensor Value);
-  Serial.print(t green");
+  Serial.print("/t green");
   Serial.print(greenSensor Value);
-  Serial.print("\t Blue");
+  Serial.print("/t Blue");
   Serial.printin(blueSensor Value);
 
   redValue = redSensor Value / 4;
   greenValue = greenSensor Value /4; 
   blueValue blueSensor Value /4;
   
-  Serial.print( Mapped sensor Values it red: ");
+  Serial.print( Mapped sensor Values /t red: ");
   Serial.print(redValue);
-  Serial.print(t green: "); 
+  Serial.print(/t green: "); 
   Serial.print(greenValue);
-  Serial.print("\t Blue: "); 
+  Serial.print("/t Blue: "); 
   Serial.printin(blueValue);
   
   analogWrite(redLEDPin, redValue);
